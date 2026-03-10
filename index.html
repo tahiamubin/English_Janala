@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- logo and title -->
+    <title>English Janala | Best Platform for English Learning</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+
+    <!-- cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- style sheet -->
+     <link rel="stylesheet" href="style.css">
+
+    <!-- tailwind and daisyui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+
+  </head>
+  <body >
+    <header>
+        <div class="navbar bg-[#BADEFF]/26 shadow-sm">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="-1"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+         <li class="btn btn-outline btn-primary">
+        <a href=""><i class="fa-regular fa-circle-question"></i>FAQ</a>
+      </li>
+      <li class="btn btn-outline btn-primary">
+        <a href=""><i class="fa-solid fa-book-open"></i></i>Learn</a>
+      </li>
+      <li class="btn btn-outline btn-primary">
+        <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i></i>LogOut</a>
+      </li>
+      </ul>
+    </div>
+    <a class="flex gap-1 items-center">
+        <span class="font-bold">English</span> <img src="assets/logo.png" alt="">
+        <span class="font-bold font-bangla">জানালা</span>
+    </a>
+  </div>
+  <div class="navbar-end hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 gap-2">
+
+      <li class="btn btn-outline btn-primary">
+        <a href=""><i class="fa-regular fa-circle-question"></i>FAQ</a>
+      </li>
+      <li class="btn btn-outline btn-primary">
+        <a href=""><i class="fa-solid fa-book-open"></i></i>Learn</a>
+      </li>
+      <li class="btn btn-outline btn-primary">
+        <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i></i>LogOut</a>
+      </li>
+    </ul>
+  </div>
+ 
+</div>
+    </header>
+
+    <main>
+        <section class="flex flex-col-reverse md:flex-row justify-around items-center gap-2 py-5 w-11/12 mx-auto">
+            <div class="container flex-1">
+                <h1 class="text-[48px] font-bold"> <span class="text-[#00BCFF]">English</span>
+                <span>is easy !!</span></h1>
+
+                <p class="font-bangla text-center md: text-left">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+
+            <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4 my-2">
+ 
+
+                 <label class="label" aria-placeholder="Your Name">Name</label>
+                <input type="email" class="input" placeholder="Email" />
+
+                <label class="label">Password</label>
+                <input type="password" class="input" placeholder="Password" />
+
+                <button class="btn btn-primary">Get Started</button>
+            </fieldset>
+            </div>
+            <div class="flex-1"><img src="assets/hero-student.png" alt=""></div>
+            
+        </section>
+
+        <section>
+            <h1 class="text-[26px] text-center font-bold"> <span class="text-[#00BCFF]">Let's learn</span>
+                <span>vocabulary</span></h1>
+
+            <div id="level-container" class="flex flex-wrap justify-center gap-2">
+            </div>
+        </section>
+        <section id="spinner" class="justify-center items-center flex p-10 hidden">
+        <span class="loading loading-bars loading-xl"></span>
+        </section>
+        <section id="word-container"  class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-cols-3 gap-5 ">
+         <div class="text-center items-center col-span-full space-y-2">
+            <img src="assets/alert-error.png" class="mx-auto" alt="">
+            <p class="text-gray-600">আপনি এখনো কোন Lesson Select করেন ন</p>
+            <h1 class="text-[32px] font-semibold">একটি Lesson Select করুন।</h1>
+         </div>
+        </section>
+
+        <!-- Open the modal using ID.showModal() method -->
+      <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+      <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
+          <div id="detail-container" class="modal-box space-y-4">
+              <!-- <div>
+                <h2 class="text-2xl font-bold">Eager (  <i class="fa-solid fa-microphone-lines"></i>   :ইগার)</h2>
+              </div>
+              <div>
+                <h2  class=" font-bold">Meaning</h2>
+                <p>আগ্রহী</p>
+              </div>
+              <div>
+                <h2>Example</h2>
+                <p>The kids were eager to open their gifts.</p>
+              </div>
+              <div>
+                <h2>সমার্থক শব্দ গুলো</h2>
+                <span class="btn">Enthusiastic</span>
+                <span class="btn">excited</span>
+                <span class="btn">keen</span>
+              </div> -->
+           
+
+          <!-- <div class="modal-action">
+      <form method="dialog">
+        
+        <button class="btn">Close</button>
+      </form> -->
+    </div>
+  </div>
+</dialog>
+    </main>
+
+    <script src="script/index.js"></script>
+  </body>
+</html>
