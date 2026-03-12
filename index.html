@@ -113,11 +113,24 @@
 
             <div id="level-container" class="flex flex-wrap justify-center gap-2">
             </div>
+            <!-- search container -->
+      <div class="join i m-10">
+        <div>
+          <label class="input validator join-item ">
+            
+            <input id="searchInput"  type="text" placeholder="search..." required />
+          </label>
+         
+        </div>
+        <button id="searchBtn" class="btn btn-primary join-item">Search</button>
+      </div>
+    </section>
+    </section>
         </section>
         <section id="spinner" class="justify-center items-center flex p-10 hidden">
         <span class="loading loading-bars loading-xl"></span>
         </section>
-        <section id="word-container"  class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-cols-3 gap-5 ">
+        <section id="word-container"  class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-cols-1 sm:grid-cols-3 gap-5  ">
          <div class="text-center items-center col-span-full space-y-2">
             <img src="assets/alert-error.png" class="mx-auto" alt="">
             <p class="text-gray-600">আপনি এখনো কোন Lesson Select করেন ন</p>
